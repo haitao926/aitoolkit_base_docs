@@ -1,0 +1,92 @@
+site_name: AIToolkit Base
+site_description: AI视觉工具包基础库文档
+site_author: AIToolkit团队
+site_url: https://haitao926.github.io/aitoolkit_base_docs/
+
+# 版权和许可信息
+copyright: Copyright &copy; 2024 AIToolkit团队
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  icon:
+    repo: fontawesome/brands/github
+
+# 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - footnotes
+  - attr_list
+
+# 插件
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# 导航结构
+nav:
+  - 首页: index.md
+  - 快速入门: quick_start.md
+  - 进阶使用: advanced_usage.md
+  - API参考:
+    - 概览: api/index.md
+    - 基础检测器: api/base_detector.md
+    - FaceDetector: api/face_detector.md
+    - FaceLandmarker: api/face_landmarker.md
+    - HandLandmarker: api/hand_landmarker.md
+    - PoseLandmarker: api/pose_landmarker.md
+    - GestureRecognizer: api/gesture_recognizer.md
+    - ObjectDetector: api/object_detector.md
+    - Camera: api/camera.md
+    - 图像工具: api/image_utils.md
+    - 模型管理器: api/model_manager.md
+    - 资源管理器: api/resource_manager.md
+  - 资源管理: resource_management.md
+  - 总结: conclusion.md
+
+# 额外链接
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/haitao926/aitoolkit_base_docs
+  version:
+    provider: mike
+
+# 仓库链接
+repo_url: https://github.com/haitao926/aitoolkit_base_docs
+repo_name: aitoolkit-base-docs
